@@ -1,0 +1,52 @@
+/* Box shadow way of coloring 3 divs with 6 colors */
+
+#inner {
+  --size: 50px;
+  --circle-size: calc(var(--size) * 2);
+  --offset: calc(var(--size) * 5);
+  border-radius: 50%;
+  position: relative;
+  top: var(--offset);
+  left: var(--offset);
+  background-color: red;
+  width: var(--circle-size);
+  height: var(--circle-size);
+  box-shadow: 0 0 0 var(--size) blue, 0 0 0 calc(var(--size) * 2) green,
+    0 0 0 calc(var(--size) * 3) yellow, 0 0 0 calc(var(--size) * 4) teal,
+    0 0 0 calc(var(--size) * 5) turquoise;
+}
+
+/* Border way of coloring 3 divs with 6 colors */
+/*
+:root {
+  --circle-size: 50px;
+}
+
+div {
+  border-radius: 50%;
+}
+
+#outer {
+  --teal-size: calc(var(--circle-size) * 8);
+  background-color: teal;
+  width: var(--teal-size);
+  height: var(---teal-size);
+  border: var(--circle-size) solid palevioletred;
+  padding: var(--circle-size);
+}
+#middle {
+  --green-size: calc(var(--circle-size) * 4);
+  background-color: green;
+  width: var(--green-size);
+  height: var(--green-size);
+  border: var(--circle-size) solid yellow;
+  padding: var(--circle-size);
+}
+
+#inner {
+  --red-size: calc(var(--circle-size) * 2);
+  background-color: red;
+  width: var(--red-size);
+  height: var(--red-size);
+  border: var(--circle-size) solid blue;
+} */
