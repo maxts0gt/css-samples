@@ -1,0 +1,28 @@
+nav {
+  display: flex;
+  color: white;
+  background-color: teal;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 1em 1.5em;
+  cursor: pointer;
+  list-style-type: none;
+}
+
+li:hover {
+  background-color: steelblue;
+}
+
+li:not(:nth-of-type(3), :last-of-type) {
+  border-right: 2px solid white;
+}
